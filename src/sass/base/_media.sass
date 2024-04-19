@@ -1,63 +1,91 @@
 @media only screen and (max-width: 1024px)
-.container
-    max-width: 760px
-    overflow: hidden
+    .container
+        max-width: 760px
+        overflow: hidden
 
-//promo
-.promo
-    &__header
-        font-size: 40px
-    &__subheader
-        font-size: 22px
-        margin-top: 12px
-.button_main
-    width: 285px
+    //promo
+    .promo
+        &__header
+            font-size: 40px
+        &__subheader
+            font-size: 22px
+            margin-top: 12px
+    .button_main
+        width: 285px
 
-//advantages
-.advantages__item
-    max-width: 250px
+    //advantages
+    .advantages__item
+        max-width: 250px
 
-//consultation
-.title_form
-    font-size: 34px
-.feed-form
-    width: 285px
-.button_submit
-    height: 55px
-    font-size: 15px
+    //consultation
+    .title_form
+        font-size: 34px
+    .feed-form
+        width: 285px
+    .button_submit
+        height: 55px
+        font-size: 15px
 
-//carousel
-.carousel
-    &__inner
-        width: 605px
+    //carousel
+    .carousel
+        &__inner
+            width: 605px
+            img
+                width: 100%
+
+    //catalog
+    .catalog-item
+        width: 250px
+        &__back-link
+            bottom: -4px
+        &__wrapper
+            height: 345px
+        &__content
+            transform: translateX(-110%)
+            &_active
+                transform: translateX(0)
+        &__old-price
+            font-size: 12px
+        &__new-price
+            font-size: 16px
+        &_running
+            margin-right: 5px
+        
+    .button_buy
+        width: 110px
+        height: 40px
+
+    //customers
+    .customers-card
         img
-            width: 100%
-
-//catalog
-.catalog-item
-    width: 250px
-    &__back-link
-        bottom: -4px
-    &__wrapper
-        height: 345px
-    &__content
-        transform: translateX(-110%)
-        &_active
-            transform: translateX(0)
-    &__old-price
-        font-size: 12px
-    &__new-price
-        font-size: 16px
-    
-.button_buy
-    width: 110px
-    height: 40px
-
-//customers
-.customers-card
-    img
-        width: 150px
-        height: 150px
-        margin-right: 20px
+            width: 150px
+            height: 150px
+            margin-right: 20px
 
 @media only screen and (max-width: 768px)
+    .container
+        max-width: 760px
+        padding: 0 10px
+
+    //header
+    .header
+        &__logo
+            width: 180px
+        &__official
+            font-size: 10px
+            span
+                font-size: 15px
+        &__call
+            display: none
+        &__burger
+            display: block
+
+    //promo
+    .promo
+        &__wrapper
+            margin-top: 35px
+            align-items: center
+        
+        
+    .carousel, .advantages
+        display: none
