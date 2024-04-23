@@ -10,7 +10,20 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <section class="promo">
+
+    <div class="menu">
+        <img src="img/running-man-2-64.png" alt="logo" class="menu__logo">
+        <ul class="menu__list">
+            <li class="menu__list-item menu__list-item_active"><a href="#promo">ГЛАВНАЯ</a></li>
+            <li class="menu__list-item"><a href="#advantages">ПРЕИМУЩЕСТВА</a></li>
+            <li class="menu__list-item"><a href="#consultation">КОНСУЛЬТАЦИЯ</a></li>
+            <li class="menu__list-item"><a href="#catalog">КАТАЛОГ</a></li>
+            <li class="menu__list-item"><a href="#customers">ОТЗЫВЫ</a></li>
+            <li class="menu__list-item"><a href="#address">АДРЕС</a></li>
+        </ul>
+    </div>
+
+    <section class="promo" id="promo">
         <div class="container">
             <header class="header">
                 <a href="#" class="header__logo">
@@ -63,36 +76,42 @@
         </div>
     </section>
 
-    <section class="advantages">
+    <section class="advantages" id="advantages">
         <div class="container">
             <h2 class="title">НАШИ ПРЕИМУЩЕСТВА</h2>
             <div class="advantages__wrapper">
                 <div class="advantages__item">
                     <img src="icons/cup.png" alt="cup" class="advantages__icon">
-                    <h3 class="advantages__subtitle">Делимся опытом</h3>
-                    <p class="advantages__descr">
-                        Наши сотрудники всегда готовы поделиться своим опытом, так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!
-                    </p>
+                    <div class="advantages__text">
+                        <h3 class="advantages__subtitle">Делимся опытом</h3>
+                        <p class="advantages__descr">
+                            Наши сотрудники всегда готовы поделиться своим опытом, так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!
+                        </p>
+                    </div>
                 </div>
                 <div class="advantages__item">
                     <img src="icons/heart.png" alt="heart" class="advantages__icon">
-                    <h3 class="advantages__subtitle">Заботимся о здоровье</h3>
-                    <p class="advantages__descr">
-                        Мы работаем для того, чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!
-                    </p>
+                    <div class="advantages__text">
+                        <h3 class="advantages__subtitle">Заботимся о здоровье</h3>
+                        <p class="advantages__descr">
+                            Мы работаем для того, чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!
+                        </p>
+                    </div>
                 </div>
                 <div class="advantages__item">
                     <img src="icons/shoe.png" alt="shoe" class="advantages__icon">
-                    <h3 class="advantages__subtitle">Учим бегать</h3>
-                    <p class="advantages__descr">
-                        Помогаем с обучением правильной технике бега! Дружим с крупнейшей школой бега в России - <a href="#">I LOVE RUNNING.</a>
-                    </p>
+                    <div class="advantages__text">
+                        <h3 class="advantages__subtitle">Учим бегать</h3>
+                        <p class="advantages__descr">
+                            Помогаем с обучением правильной технике бега! Дружим с крупнейшей школой бега в России - <a href="#">I LOVE RUNNING.</a>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="consultation">
+    <section class="consultation" id="consultation">
         <div class="container">
             <h2 class="title title_form">Получите бесплатную консультацию по подбору пульсометра </h2>
             <h3 class="consultation__subtitle">Просто заполните форму заявки и мы перезвоним вам в течении 10 минут</h3>
@@ -123,7 +142,7 @@
         </div>
     </section>
 
-    <section class="catalog">
+    <section class="catalog" id="catalog">
         <div class="container">
             <h2 class="title">Каталог пульсометров</h2>
             <ul class="catalog__tabs">
@@ -381,7 +400,7 @@
         </div>
     </section>
 
-    <section class="customers">
+    <section class="customers" id="customers">
         <div class="container">
             <h2 class="title">отзывы клиентов</h2>
             <div class="customers-card">
@@ -411,7 +430,7 @@
         </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" id="address">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2252.2024737412194!2d37.644265015781265!3d55.76874286536632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a6367b51bd7%3A0x3b7e3a741913ef24!2z0JzRj9GB0L3QuNGG0LrQuNC5INC_0YAt0LQsINC0LjPRgTEsINCc0L7RgdC60LLQsCwg0KDQvtGB0YHQuNGPLCAxMDcwNzg!5e0!3m2!1sru!2saz!4v1713820846089!5m2!1sru!2saz" width="100%" height="630" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <div class="footer__info">
             <address class="footer__addr">Москва, Мясницкий проезд, д.3с1</address>

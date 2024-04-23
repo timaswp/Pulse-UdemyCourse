@@ -67,6 +67,9 @@
         max-width: 760px
         padding: 0 10px
 
+    .title
+        font-size: 26px
+
     //header
     .header
         &__logo
@@ -82,6 +85,8 @@
 
     //promo
     .promo
+        min-height: 550px
+        padding-bottom: 65px
         &__wrapper
             margin-top: 35px
             align-items: center
@@ -95,11 +100,162 @@
         &__icons
             width: 390px
             margin-top: 45px
+        &__link
+            font-size: 14px
 
     .button_main
         width: 220px
         font-size: 13px
         margin-top: 55px
+
+    //advantages
+    .advantages
+        min-height: 450px
+        padding: 65px 0 40px 0
+        &__wrapper
+            margin-top: 50px
+            flex-direction: column
+        &__item
+            max-width: 100%
+            display: flex
+        &__icon
+            height: 65px
+            margin-right: 10px
+        &__text
+            text-align: left
+        &__subtitle
+            margin-top: 15px
+        &__descr
+            margin-top: 0
         
-    .carousel, .advantages
-        display: none
+
+    //consultation
+    .consultation
+        min-height: 550px
+        padding: 65px 0 95px 0
+        &__subtitle
+            width: 100%
+            font-size: 17px
+            line-height: 28px
+    
+    .title_form
+        width: 100%
+        font-size: 24px
+        line-height: 28px
+
+    .feed-form
+        width: 270px
+        input
+            height: 42px
+            padding: 0 18px
+
+    .button_submit
+        height: 42px
+        font-size: 13px
+
+    //carousel
+    .carousel
+        padding: 50px 0
+        &__inner
+            width: 300px
+
+        .slick-prev
+            left: -55px
+        .slick-next
+            right: -55px
+
+    //catalog
+    .catalog
+        padding-top: 10px
+        padding-bottom: 60px
+        h2
+            width: 300px
+            margin: 0 auto
+        &__tabs
+            margin-top: 20px
+        &__tab
+            width: 120px
+            height: 42px
+            font-size: 12px
+            line-height: 42px
+        &__content
+            margin-top: 25px
+        &-item
+            width: 200px
+            min-height: 200px
+            padding: 10px 10px 15px 10px
+            margin-bottom: 10px
+            &_running
+                margin-right: 6px
+            &__wrapper
+                height: 260px
+            &__img
+                height: 140px
+            &__subtitle
+                font-size: 14px
+                margin: 6px 0
+            &__descr
+                font-size: 12px
+                margin-bottom: 5px
+            &__link
+                font-size: 12px
+            hr
+                margin-top: 0
+                margin-bottom: 10px
+            &__old-price
+                font-size: 10px
+            &__new-price
+                font-size: 13px
+            &__list
+                padding-right: 10px
+                padding-left: 15px
+                li
+                    font-size: 12px
+                    line-height: 14px
+                    margin-bottom: 14px
+            &__back-link
+                font-size: 12px
+                bottom: 10px
+    
+    .button_buy
+        width: 90px
+        height: 34px
+
+    //customers
+    .customers
+        h2
+            margin-bottom: 35px
+        &-card
+            min-height: 255px
+            img
+                width: 120px
+                height: 120px
+            &__name
+                font-size: 16px
+            &__stat
+                font-size: 13px
+                margin-bottom: 5px
+            &__comment
+                font-size: 14px
+                line-height: 16px
+
+    //footer
+    .footer
+        height: 450px
+        &__info
+            width: 315px
+            height: 190px
+            padding: 30px 23px 24px
+        &__addr
+            font-size: 16px
+            line-height: 16px
+            margin-bottom: 25px
+        &__phone
+            font-size: 18px
+            line-height: 18px
+            margin-bottom: 25px
+        &__social-item
+            width: 45px
+            height: 45px
+        iframe
+            height: 450px
