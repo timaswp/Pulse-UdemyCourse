@@ -30,6 +30,15 @@ $(document).ready(function(){
     $('ul.menu__list').on('click', 'li:not(.menu__list-item_active)', function() {
         $(this)
         .addClass('menu__list-item_active').siblings().removeClass('menu__list-item_active')
-        // .closest('div.container').find('div.catalog__content').removeClass('catalog__content_active').eq($(this).index()).addClass('catalog__content_active');
     });
 });
+
+let menu = document.getElementById('menu')
+let burgerLine = document.querySelectorAll('.header__burger-line')
+
+function openMenu() {
+    menu.style = "transform: translateX(0);"
+    burgerLine[0].style = "transform: rotate(45deg);"
+    burgerLine[2].style = "transform: rotate(-45deg);"
+    burgerLine[1].style = "display: none;"
+};
