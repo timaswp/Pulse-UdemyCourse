@@ -35,9 +35,13 @@ $(document).ready(function(){
 
 let menu = document.getElementById('menu')
 let burgerLine = document.querySelectorAll('.header__burger-line')
+let burger = document.getElementsByClassName('header__burger')[0]
+let burgerEmptyBlock = document.getElementsByClassName('header__empty-block')[0]
 
 function toggleMenu() {
     menu.classList.toggle("menu_active");
+    burger.classList.toggle("header__burger_active");
+    burgerEmptyBlock.classList.toggle("header__empty-block_active")
     burgerLine.forEach(function(item) {
         item.classList.toggle("header__burger-line_active");
     });

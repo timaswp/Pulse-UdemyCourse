@@ -9,13 +9,13 @@ const autoprefixer = require('gulp-autoprefixer');
 gulp.task('server', function() {
     browserSync.init({
         server: {
-            baseDir: "src"
+            baseDir: "docs"
         }
     });
 });
 
 gulp.task('styles', function() {
-    return gulp.src("src/sass/**/*.+(sass|scss)")
+    return gulp.src("docs/sass/**/*.+(sass|scss)")
             .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
             .pipe(rename({
                 prefix: "",
@@ -26,13 +26,13 @@ gulp.task('styles', function() {
                 cascade: false
             }))
             .pipe(cleanCSS({compatibility: 'ie8'}))
-            .pipe(gulp.dest("src/css"))
+            .pipe(gulp.dest("docs/css"))
             .pipe(browserSync.stream());
 });
 
 gulp.task('watch', function() {
-    gulp.watch("src/sass/**/*.+(sass|scss)", gulp.parallel("styles"));
-    gulp.watch("src/*.html").on("change", browserSync.reload);
+    gulp.watch("docs/sass/**/*.+(sass|scss)", gulp.parallel("styles"));
+    gulp.watch("docs/*.html").on("change", browserSync.reload);
 });
 
 gulp.task('default', gulp.parallel('watch', 'server', 'styles'));
