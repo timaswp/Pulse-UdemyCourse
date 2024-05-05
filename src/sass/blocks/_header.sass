@@ -33,3 +33,11 @@
             border-radius: 1px
             background-color: #fff
             margin-top: 3px
+            transition: 0.5s
+            &_active
+                &:nth-child(1)
+                    transform: rotate(-45deg)
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: translateY(-5px) rotate(45deg)

@@ -36,9 +36,9 @@ $(document).ready(function(){
 let menu = document.getElementById('menu')
 let burgerLine = document.querySelectorAll('.header__burger-line')
 
-function openMenu() {
-    menu.style = "transform: translateX(0);"
-    burgerLine[0].style = "transform: rotate(45deg);"
-    burgerLine[2].style = "transform: rotate(-45deg);"
-    burgerLine[1].style = "display: none;"
-};
+function toggleMenu() {
+    menu.classList.toggle("menu_active");
+    burgerLine.forEach(function(item) {
+        item.classList.toggle("header__burger-line_active");
+    });
+}
