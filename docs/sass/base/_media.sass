@@ -181,21 +181,21 @@
         &__content
             margin-top: 25px
         &-item
-            width: 200px
+            width: 32%
             min-height: 200px
-            padding: 10px 10px 15px 10px
+            padding: 10px 5px 15px 5px
             margin-bottom: 10px
             &_running
                 margin-right: 6px
             &__wrapper
                 height: 260px
             &__img
-                height: 140px
+                height: 120px
             &__subtitle
                 font-size: 14px
                 margin: 6px 0
             &__descr
-                font-size: 12px
+                font-size: 11px
                 margin-bottom: 5px
             &__link
                 font-size: 12px
@@ -207,12 +207,12 @@
             &__new-price
                 font-size: 13px
             &__list
-                padding-right: 10px
+                padding-right: 15px
                 padding-left: 15px
                 li
                     font-size: 12px
-                    line-height: 14px
-                    margin-bottom: 14px
+                    line-height: 12px
+                    margin-bottom: 5px
             &__back-link
                 font-size: 12px
                 bottom: 10px
@@ -259,6 +259,14 @@
             height: 45px
         iframe
             height: 450px
+
+@media only screen and ( max-width: 480px)
+    //catalog
+    .catalog
+        &-item
+            width: 49%
+            &__back-link
+                bottom: 50px
 
 @media only screen and ( max-width: 425px)
     .container
@@ -382,7 +390,6 @@
         &__content
             margin-top: 15px
         &-item
-            width: 145px
             &_running
                 margin-right: 10px
             &__wrapper
@@ -407,7 +414,6 @@
                     line-height: 10px
             &__back-link
                 font-size: 10px
-                bottom: 12px
                 transform: translateX(calc(-50% - 10px))
             
     .button_buy
@@ -453,3 +459,7 @@
                 height: 20px
         iframe
             height: 415px
+
+@media only screen and ( max-width: 366px)
+    .catalog-item__back-link
+        bottom: 32px
