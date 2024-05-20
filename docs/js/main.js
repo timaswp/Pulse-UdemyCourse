@@ -31,18 +31,35 @@ $(document).ready(function(){
         $(this)
         .addClass('menu__list-item_active').siblings().removeClass('menu__list-item_active')
     });
-});
 
-let menu = document.getElementById('menu')
-let burgerLine = document.querySelectorAll('.header__burger-line')
-let burger = document.getElementsByClassName('header__burger')[0]
-let burgerEmptyBlock = document.getElementsByClassName('header__empty-block')[0]
+    //mobile menu
 
-function toggleMenu() {
-    menu.classList.toggle("menu_active");
-    burger.classList.toggle("header__burger_active");
-    burgerEmptyBlock.classList.toggle("header__empty-block_active")
-    burgerLine.forEach(function(item) {
-        item.classList.toggle("header__burger-line_active");
+    let menu = document.getElementById('menu')
+    let burgerLine = document.querySelectorAll('.header__burger-line')
+    let burger = document.getElementsByClassName('header__burger')[0]
+    let burgerEmptyBlock = document.getElementsByClassName('header__empty-block')[0]
+
+    $('.header__burger').on('click', function() {
+        menu.classList.toggle("menu_active");
+        burger.classList.toggle("header__burger_active");
+        burgerEmptyBlock.classList.toggle("header__empty-block_active")
+        burgerLine.forEach(function(item) {
+            item.classList.toggle("header__burger-line_active");
+        })
     });
-}
+
+    //modal
+
+    $('[data-modal=consultation]').on('click', function() {
+        $('.overlay, #consultation').fadeIn('slow');
+    });
+    $('.button_buy').each(function(i) {
+        $(this).on('click', function() {
+            $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
+            $('.overlay, #order').fadeIn('slow');
+        });
+    });
+    $('.modal__close').on('click', function() {
+        $('.overlay, #consultation, #order, #thanks').fadeOut('slow');
+    });
+});
