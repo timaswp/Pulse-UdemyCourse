@@ -16,7 +16,7 @@
         <ul class="menu__list">
             <li class="menu__list-item menu__list-item_active"><a href="#promo">ГЛАВНАЯ</a></li>
             <li class="menu__list-item"><a href="#advantages">ПРЕИМУЩЕСТВА</a></li>
-            <li class="menu__list-item"><a href="#consultation">КОНСУЛЬТАЦИЯ</a></li>
+            <li class="menu__list-item"><a href="#consult">КОНСУЛЬТАЦИЯ</a></li>
             <li class="menu__list-item"><a href="#catalog">КАТАЛОГ</a></li>
             <li class="menu__list-item"><a href="#customers">ОТЗЫВЫ</a></li>
             <li class="menu__list-item"><a href="#address">АДРЕС</a></li>
@@ -112,15 +112,15 @@
         </div>
     </section>
 
-    <section class="consultation" id="consultation">
+    <section class="consultation" id="consult">
         <div class="container">
             <h2 class="title title_form">Получите бесплатную консультацию по подбору пульсометра </h2>
             <h3 class="consultation__subtitle">Просто заполните форму заявки и мы перезвоним вам в течении 10 минут</h3>
 
-            <form class="feed-form" action="#">
-                <input name="name" required placeholder="Ваше имя" type="text">
-                <input name="phone" required placeholder="Ваш телефон" type="tel">
-                <input name="email" required placeholder="Ваш E-mail" type="email">
+            <form id="consultation-form" class="feed-form" action="#">
+                <input name="name" placeholder="Ваше имя" type="text">
+                <input name="phone" placeholder="Ваш телефон" type="tel">
+                <input name="email" placeholder="Ваш E-mail" type="email">
     
                 <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
             </form>
@@ -451,9 +451,9 @@
             <div class="modal__subtitle">Просто заполните форму заявки</div>
             <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
             <form class="feed-form feed-form_modal" action="#">
-                <input name="name" required placeholder="Ваше имя" type="text">
-                <input name="phone" required placeholder="Ваш телефон" type="tel">
-                <input name="email" required placeholder="Ваш E-mail" type="email">
+                <input name="name" placeholder="Ваше имя" type="text">
+                <input name="phone" placeholder="Ваш телефон" type="tel">
+                <input name="email" placeholder="Ваш E-mail" type="email">
     
                 <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
             </form>
@@ -464,9 +464,9 @@
             <div class="modal__subtitle">Ваш заказ:</div>
             <div class="modal__descr">Пульсометр Polar FT1</div>
             <form class="feed-form feed-form_modal" action="#">
-                <input name="name" required placeholder="Ваше имя" type="text">
-                <input name="phone" required placeholder="Ваш телефон" type="tel">
-                <input name="email" required placeholder="Ваш E-mail" type="email">
+                <input name="name" placeholder="Ваше имя" type="text">
+                <input name="phone" placeholder="Ваш телефон" type="tel">
+                <input name="email" placeholder="Ваш E-mail" type="email">
     
                 <button class="button button_submit">Купить</button>
             </form>
@@ -482,6 +482,8 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

@@ -62,4 +62,37 @@ $(document).ready(function(){
     $('.modal__close').on('click', function() {
         $('.overlay, #consultation, #order, #thanks').fadeOut('slow');
     });
+
+    //form validation
+
+    function validateForms (form) {
+        $(form).validate({
+            rules: {
+                name: "required",
+                phone: "required",
+                email: {
+                    required: true,
+                    email: true
+                }
+            },
+            messages: {
+                name: "Пожалуйста, введите свое имя",
+                phone: "Пожалуйста, введите свой номер телефона",
+                email: {
+                  required: "Пожалуйста, введите свою почту",
+                  email: "Указан некорректный адрес электронной почты"
+                }
+            }
+        });
+    };
+
+    validateForms('#consultation-form')
+    validateForms('#consultation form')
+    validateForms('#order form')
+
+    //form mask
+
+    $.mask.definitions['9'] = false;
+    $.mask.definitions['0']="[0-9]";
+    $('input[name=phone]').mask("+994 (00) 000-00-00");
 });
