@@ -95,4 +95,21 @@ $(document).ready(function(){
     $.mask.definitions['9'] = false;
     $.mask.definitions['0']="[0-9]";
     $('input[name=phone]').mask("+994 (00) 000-00-00");
+
+    //form submit
+
+    // $('form').submit(function(e) {
+    //     e.preventDefault();
+    //     $.ajax({
+    //         type: "POST",
+    //         url: "mailer/smart.php",
+    //         data: $(this).serialize()
+    //     }).done(function() {
+    //         $(this).find('input').val("");
+    //         $('#consultation, #order').fadeOut();
+    //         $('.overlay, #thanks').fadeIn('slow');
+    //         $('form').trigger('reset');
+    //     });
+    //     return false;
+    // });
 });
