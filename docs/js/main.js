@@ -4,8 +4,8 @@ $(document).ready(function(){
         adaptiveHeight: true,
         // autoplay: true,
         // autoplaySpeed: 2000,
-        prevArrow: '<button type="button" class="slick-prev"><img src="icons/chevron left solid.svg"></button>',
-        nextArrow: '<button type="button" class="slick-next"><img src="icons/chevron right solid.svg"></button>'
+        prevArrow: '<button type="button" class="slick-prev"><img src="icons/chevron_left_solid.svg"></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="icons/chevron_right_solid.svg"></button>'
     });
 
     $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function() {
@@ -112,4 +112,16 @@ $(document).ready(function(){
     //     });
     //     return false;
     // });
+
+    //scroll n pageup
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 1600) {
+            $('.pageup').fadeIn();
+        } else {
+            $('.pageup').fadeOut();
+        }
+    })
+
+    new WOW().init();
 });
